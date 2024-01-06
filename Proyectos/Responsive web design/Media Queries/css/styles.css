@@ -15,10 +15,6 @@ body {
     line-height: 2;
 }
 
-img {
-    max-width: 100%;
-}
-
 h1 {
     font-size: 4rem;
 }
@@ -39,4 +35,14 @@ p {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.contenedor{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
 }
