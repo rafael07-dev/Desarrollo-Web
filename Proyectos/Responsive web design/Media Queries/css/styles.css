@@ -13,6 +13,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    background-color: #2196F3;
 }
 
 h1 {
@@ -45,4 +46,16 @@ p {
 
 img {
     max-width: 100%;
+}
+
+@media (min-width: 500px){
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width: 800px) {
+    body{
+        background-color: lightcoral;
+    }
 }
