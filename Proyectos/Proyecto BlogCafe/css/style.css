@@ -84,6 +84,12 @@ img {
     font-size: 2.2rem;
 }
 
+.navegacion a:hover{
+    font-size: 2.6rem;
+    color: orange;
+    transition: ease 200ms;
+}
+
 @media (min-width: 768px ){
     .navegacion a{
         display: inline;
