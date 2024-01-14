@@ -185,16 +185,7 @@ img {
     }
 }
 
-/*aside
-
-.curso{
-    background-color: orange;
-    color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    margin-top: 2rem;
-}*/
-
+/*aside*/
 /*footer*/
 .barra-footer{
     background-color: #000000;
@@ -206,18 +197,26 @@ img {
     text-decoration: none;
     font-size: 2rem;
     margin-right: 3rem;
+    margin-left: 3rem;
     color: #ffffff;
+}
+
+.barra-footer a:hover{
+    font-size: 2.6rem;
+    color: orange;
+    transition: ease 200ms;
 }
 
 @media (min-width: 768px ){
     .navegacion-footer a{
         display: inline;
+        font-size: 2.2rem;
     }
 
     .barra-footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 20rem;
+        height: 21rem;
     }
 }
