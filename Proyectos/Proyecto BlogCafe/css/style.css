@@ -9,6 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    margin: 0;
 }
 /** Globales **/
 .contenedor {
@@ -88,15 +89,17 @@ img {
 
 .site-header h1{
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
+    
 }
 
 .site-header h1 span{
     font-weight: 700;
+    color: orange;
 }
 .linea{
     margin-top: 5rem;
-    width: 70%;
+    width: 90%;
 }
 /*navegacion*/
 
@@ -161,6 +164,10 @@ img {
     font-size: 2.2rem;
 }
 
+.curso{
+    border-bottom: 1px solid #000000;
+}
+
 .cursos{
     order: -1;
 }
@@ -169,6 +176,14 @@ img {
     font-size: 2.2rem;
 }
 
+.entrada-blog{
+    border-bottom: 1px solid #000000;
+    margin-top: 2rem;
+}
+
+.entrada-blog:last-of-type{
+    border-bottom: none;
+}
 
 @media (min-width: 768px ){
     .contenedor-principal{
@@ -183,6 +198,7 @@ img {
         flex-basis: calc(33.3% - 4rem);
         order: 2;
     }
+
 }
 
 /*aside*/
@@ -196,8 +212,6 @@ img {
     display: block;
     text-decoration: none;
     font-size: 2rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
     color: #ffffff;
 }
 
@@ -207,13 +221,18 @@ img {
     transition: ease 200ms;
 }
 
+.barra-footer h2 span{
+    color: orange;
+}
+
 @media (min-width: 768px ){
     .navegacion-footer a{
         display: inline;
         font-size: 2.2rem;
+        margin: 1rem;
     }
 
-    .barra-footer{
+    .barra-footer .contenedor{
         display: flex;
         justify-content: space-between;
         align-items: center;
