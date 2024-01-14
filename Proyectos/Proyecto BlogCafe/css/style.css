@@ -45,6 +45,25 @@ img {
     text-align: center;
 }
 
+.btn{
+    display: block;
+    text-decoration: none;
+    height: 4.5rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.btn-primario {
+    background-color: #000000;
+}
+.btn-secundario {
+    background-color: #784d3c;
+}
+
 /*Header*/
 @media (min-width: 768px ){
     .barra{
@@ -75,7 +94,10 @@ img {
 .site-header h1 span{
     font-weight: 700;
 }
-
+.linea{
+    margin-top: 5rem;
+    width: 70%;
+}
 /*navegacion*/
 
 .navegacion a{
@@ -122,3 +144,53 @@ img {
     }
 
 }
+
+/*contenido principal*/
+
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog, 
+.cursos {
+    flex: 0 0 100%;
+}
+
+.blog p{
+    font-size: 2.2rem;
+}
+
+.cursos{
+    order: -1;
+}
+
+.cursos p{
+    font-size: 2.2rem;
+}
+
+
+@media (min-width: 768px ){
+    .contenedor-principal{
+        justify-content: space-between;
+    }
+
+    .blog{
+        flex-basis: 66.6%;
+    }
+
+    .cursos{
+        flex-basis: calc(33.3% - 4rem);
+        order: 2;
+    }
+}
+
+/*aside
+
+.curso{
+    background-color: orange;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 2rem;
+}*/
