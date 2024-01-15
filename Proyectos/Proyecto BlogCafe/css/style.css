@@ -252,3 +252,23 @@ img {
         height: 21rem;
     }
 }
+
+
+/*cursos*/
+@media (min-width: 768px ){
+    .cursos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        border-bottom: 1px solid #000000;
+    }
+
+    .cursos:last-of-type{
+        border-bottom: none;
+    }
+    .img-curso{
+        height: 90%;
+    }
+
+
+}
