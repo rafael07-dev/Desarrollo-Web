@@ -254,20 +254,25 @@ img {
 }
 
 
-/*cursos*/
+/*grid*/
 @media (min-width: 768px ){
-    .cursos{
+    .grid{
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
         border-bottom: 1px solid #000000;
     }
 
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    .columnas-8{
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+
     .cursos:last-of-type{
         border-bottom: none;
-    }
-    .img-curso{
-        height: 90%;
     }
 
 
