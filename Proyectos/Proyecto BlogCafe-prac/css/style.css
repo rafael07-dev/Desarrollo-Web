@@ -49,6 +49,12 @@ ul{
     text-align: center;
 }
 
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 /*header*/
 
 .site-header{
@@ -76,10 +82,11 @@ ul{
 .site-header ul{
     list-style: none;
     margin-right: 2rem;
+    font-weight: 400;
 }
 
 .site-header span{
-    font-weight: 600;
+    font-weight: 700;
     color: orange;
 }
 
@@ -90,14 +97,46 @@ ul{
         width: 0;
     }
     to{
-        width: 80%;
+        width: 66%;
     }
 }
-/*
-.site-header p{
-    overflow: hidden;
-    border-right: 1px solid #fff;
-    white-space: nowrap;
-    margin-top: 20px;
-    animation: typing 2s steps(25) normal;
-}*/
+
+@keyframes removeBorder {
+    from, to{
+        border-right: none;
+    }
+}
+
+@media (min-width: 768px ){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links ul{
+        display: flex;
+    }
+
+    .nav-links ul li{
+        margin-right: 1rem;
+    }
+
+    .nav-links ul li:last-of-type{
+        margin-right: 0;
+    }
+
+    .site-header h1{
+        margin-top: 12.4rem;
+    }
+
+    .site-header p{
+        position: absolute;
+        overflow: hidden;
+        border-right: 1px solid #fff;
+        white-space: nowrap;
+        animation: typing 2s steps(25) none;
+        margin-left: 6rem;
+    }
+
+
+}
