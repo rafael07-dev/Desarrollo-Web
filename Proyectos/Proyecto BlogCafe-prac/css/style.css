@@ -4,6 +4,7 @@ html {
 
 img {
     max-width: 100%;
+    border-radius: 3%;
 }
 
 body {
@@ -253,6 +254,11 @@ footer{
     display: inline-block;
     color: white;
     text-decoration: none;
+}
+
+.site-footer li{
+    display: inline-block;
+    text-decoration: none;
     list-style: none;
 }
 
@@ -274,5 +280,16 @@ footer{
     .column-4{
         flex: 0 0 calc(50% - 1rem);
     }
-    
+    .contenedor_formulario{
+        display: grid;
+    }
+}
+
+.contenedor_formulario{
+    position: relative;
+    max-width: 80%;
+    background-color: white;
+    margin-top: -3rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
 }
