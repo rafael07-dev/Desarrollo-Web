@@ -260,3 +260,18 @@ footer{
     color: orange;
 }
 
+/*grid*/
+
+@media (min-width: 768px ){
+    .grid{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .column-2{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .column-4{
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
