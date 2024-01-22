@@ -267,7 +267,6 @@ footer{
 }
 
 /*grid*/
-
 @media (min-width: 768px ){
     .grid{
         display: flex;
