@@ -38,7 +38,7 @@ ul {
 
 /*Utilidades*/
 
-.btn{
+.btn {
     display: block;
     height: 40px;
     text-align: center;
@@ -50,11 +50,11 @@ ul {
     margin-bottom: 1rem;
 }
 
-.btn-primario{
+.btn-primario {
     background-color: black;
 }
 
-.btn-secundario{
+.btn-secundario {
     background-color: #784d3c;
 }
 
@@ -119,7 +119,7 @@ ul {
 
 /*typing header*/
 
-#span{
+#span {
     color: #fff;
     font-size: 1.2rem;
 }
@@ -131,11 +131,11 @@ ul {
 }
 
 @keyframes typing {
-    0%{
+    0% {
         width: 0;
     }
 
-    100%{
+    100% {
         width: 100%;
     }
 }
@@ -170,11 +170,14 @@ ul {
     }
 
     .site-header .typing {
-        margin: 0 auto; /* Centra horizontalmente */
-        max-width: 620px; /* Ajusta el ancho máximo según tus necesidades */
-        text-align: center; /* Alinea el texto al centro */
+        margin: 0 auto;
+        /* Centra horizontalmente */
+        max-width: 620px;
+        /* Ajusta el ancho máximo según tus necesidades */
+        text-align: center;
+        /* Alinea el texto al centro */
     }
-    
+
     .site-header .typing span {
         border-right: 1px solid #fff;
         white-space: nowrap;
@@ -185,38 +188,41 @@ ul {
 }
 
 /*contenido principal*/
-.principal-main{
+.principal-main {
     display: flex;
     flex-wrap: wrap;
 }
+
 /*
 .blog, 
 .cursos {
     flex: 0 0 100%;
 }*/
 
-.cursos{
+.cursos {
     order: -1;
 }
 
-.contenido-blog{
-    border-bottom: 1px solid rgb(190, 187, 187) ;
+.contenido-blog {
+    border-bottom: 1px solid rgb(190, 187, 187);
     margin-bottom: 1rem;
 }
 
-.contenido-blog:last-of-type{
+.contenido-blog:last-of-type {
     border-bottom: none;
 }
 
-@media (min-width: 768px){
-    .principal-main{
+@media (min-width: 768px) {
+    .principal-main {
         justify-content: space-between;
     }
-    .blog{
+
+    .blog {
         /* flex: 0 0 calc(60% - 1rem);*/
-         flex-basis: calc(60% - 1rem);
-     }
-    .cursos{
+        flex-basis: calc(60% - 1rem);
+    }
+
+    .cursos {
         /*flex: 0 0 calc(40% - 1rem);*/
         flex-basis: calc(40% - 1rem);
         order: 2;
@@ -224,71 +230,77 @@ ul {
 }
 
 /*cursos*/
-.curso{
+.curso {
     border-bottom: 1px solid rgb(190, 187, 187);
 }
 
-.curso:last-of-type{
+.curso:last-of-type {
     border-bottom: none;
 }
 
-.curso p{
+.curso p {
     font-size: .9rem;
 }
 
 /*site-footer*/
 
-@media (min-width: 768px ){
-    .site-footer{
+@media (min-width: 768px) {
+    .site-footer {
         display: flex;
         justify-content: space-between;
     }
 }
 
-footer{
+footer {
     background-color: black;
     text-align: center;
 }
 
-.site-footer a{
+.site-footer a {
     display: inline-block;
     color: white;
     text-decoration: none;
 }
 
-.site-footer li{
+.site-footer li {
     display: inline-block;
     text-decoration: none;
     list-style: none;
 }
 
-.site-footer a:hover{
+.site-footer a:hover {
     color: orange;
 }
 
 /*grid*/
-@media (min-width: 768px ){
-    .grid{
+@media (min-width: 768px) {
+    .grid {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 2rem;
+        flex-wrap: wrap;
     }
-    .column-2{
+
+    .column-4 {
+        flex: 0 0 calc(33% - 1rem);
+    }
+
+    .columnas-8 {
         flex: 0 0 calc(50% - 1rem);
     }
-    .column-4{
-        flex: 0 0 calc(50% - 1rem);
+
+    .columnas-10 {
+        flex: 0 0 calc(66.6%);
     }
-    .contenedor_formulario{
-        display: grid;
+
+    .columnas-12 {
+        flex: 0 0 100%;
     }
 }
 
-.contenedor_formulario{
-    position: relative;
-    max-width: 80%;
-    background-color: white;
-    margin-top: -3rem;
-    margin-left: 5rem;
-    margin-bottom: 2rem;
+/*Formulario contacto*/
+@media (min-width: 768px) {
+
+    .contenedor_formulario {
+        margin-top: -10rem;
+    }
 }
