@@ -1,54 +1,64 @@
-*{
+:root {
+    --main-color: #141fff;
+    --bg-color: #fff;
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    color: var(--main-color);
 }
 
-h1{
+h1 {
     font-size: 2.8rem;
 }
-h2{
+
+h2 {
     font-size: 2.4rem;
 }
 
-/*Utilidades*/
-.btn{
+img {
+    max-width: 100%;
+}
 
-    border: 1px solid #0613ce;
+/*Utilidades*/
+.btn {
+
+    border: 1px solid var(--main-color);
     border-radius: 8px;
     padding: .5rem;
-    color: #0613ce;
+    color: var(--main-color);
     text-decoration: none;
     width: 110px;
 }
 
+.centrar-texto {
+    text-align: center;
+}
+
 /*header*/
-.site-header{
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.site-header a{
-    text-decoration: none;
-    color: black;
-}
-.barra ul{
+.barra ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.barra ul li{
+.barra ul li {
     margin: 1rem;
 }
 
-.logo{
+.logo {
     font-weight: bold;
     margin: 1rem;
 
@@ -56,40 +66,65 @@ h2{
 }
 
 /*main*/
-.container{
+.container {
     width: 60%;
     margin: 0 auto;
 }
 
-.container a{
+.container a {
     display: block;
     margin-top: 2rem;
 }
 
-.about-me{
+.about-me {
     margin-top: 2rem;
 }
 
-.about-me p{
+.about-me p {
     margin-top: 1rem;
+}
+
+.btn-download a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-color: var(--bg-color);
 }
 
 .gradient-text {
     /* Fallback: Set a background color. */
-    background-color: rgb(1, 46, 170);
-    
+    background-color: var(--main-color);
+
     /* Create the gradient. */
     background-image: linear-gradient(45deg, #4c5feb, #0613ce);
-    
+
     /* Set the background size and repeat properties. */
     background-size: 100%;
     background-repeat: repeat;
-  
+
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-  }
-  
+}
+
+
+/*projects*/
+
+.projects {
+    margin-top: 1rem;
+}
+
+/*grid*/
+
+@media (min-width: 768px) {
+    .projects {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .columnas-2 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
