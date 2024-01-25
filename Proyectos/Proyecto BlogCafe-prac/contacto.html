@@ -33,32 +33,41 @@
 
         </div>
     </header>
+    <main class="contenedor">
+        <h1 class="centrar-texto">Contacto</h1>
+        <div class="grid centrar-columnas">
 
-    <div class="contenedor principal-main">
-        <main>
-            <h1 class="centrar-texto">Contacto</h1>
-            <img src="img/contacto.jpg" alt="">
+            <div class="columnas-12">
+                <img src="img/contacto.jpg" alt="">
+            </div>
 
-            <div class="contenedor_formulario">
+            <div class="columnas-10 contenedor-formulario">
                 <form action="#" class="">
-                    <div class="row-name"><label for="input">Nombre</label>
+                    <div class="campo">
+                        <label for="input">Nombre</label>
                         <input type="text" placeholder="Tu nombre">
                     </div>
 
-                    <div class="row-email"><label for="email">Email</label>
-                        <input type="email">
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Tu email">
                     </div>
 
-                    <div class="row-mensaje"><label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <div class="campo mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <div class="campo enviar">
+                        <button>Enviar</button>
                     </div>
 
                 </form>
             </div>
-        </main>
 
-    </div>
 
+        </div>
+    </main>
     <footer>
         <div class="contenedor site-footer">
             <a class="logo centrar-texto" href="/">Blog<strong>DeCafe</strong></a>

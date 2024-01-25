@@ -280,27 +280,55 @@ footer {
         flex-wrap: wrap;
     }
 
+    .centrar-columnas{
+        justify-content: center;
+    }
+
     .column-4 {
         flex: 0 0 calc(33% - 1rem);
     }
 
-    .columnas-8 {
+    .columnas-6 {
         flex: 0 0 calc(50% - 1rem);
     }
 
-    .columnas-10 {
+    .columnas-8 {
         flex: 0 0 calc(66.6%);
     }
 
-    .columnas-12 {
+    .columnas-10 {
+        flex: 0 0 calc(83% - 1rem);
+    }
+
+    .columnas-12{
         flex: 0 0 100%;
     }
 }
 
 /*Formulario contacto*/
+.contenedor-formulario{
+    background-color: #ffffff;
+    padding: 5rem;
+}
 @media (min-width: 768px) {
-
-    .contenedor_formulario {
-        margin-top: -10rem;
+    .contenedor-formulario{
+        margin-top: -5rem;
+        
     }
+}
+
+.contenedor-formulario .campo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.contenedor-formulario .campo label{
+    flex: 0 0 8rem;
+}
+
+.contenedor-formulario .campo input,
+.contenedor-formulario textarea{
+    flex: 1;
+    border: 1px solid #777675;
 }
