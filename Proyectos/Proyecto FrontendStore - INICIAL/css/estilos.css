@@ -46,6 +46,10 @@ h2{
     margin: 0 auto;
 }
 
+/*.contenedor .lista-productos{
+    zoom: 70%;
+}*/
+
 .hero {
     opacity: .9;
 }
@@ -68,7 +72,7 @@ h2{
 
 
 .lista-productos li p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #fff;
     margin-bottom: 1rem;
 }
@@ -78,6 +82,17 @@ h2{
     font-weight: bold;
 }
 
+.lista-productos li:hover{
+    border: 2px solid #9d2bce;
+    transition: all ease 400ms;
+}
+
 .lista-productos a{
     margin: auto;
+}
+
+.card{
+    height: 200px;
+    width: 150px;
+    background-color: #9d2bce;
 }
