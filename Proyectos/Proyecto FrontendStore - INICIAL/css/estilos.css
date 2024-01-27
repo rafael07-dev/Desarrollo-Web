@@ -14,6 +14,30 @@ header{
 
 html{
     background-color: #f1f2ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color: orange;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.boton{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 5px;
+    color: #fff;
+    height: 30px;
+    width: 40%;
+    text-decoration: none;
 }
 
 .contenedor{
@@ -23,7 +47,30 @@ html{
 
 .lista-productos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1rem;
     list-style: none;
+}
+
+.lista-productos li{
+    border: 2px solid #cdcdd4;
+    border-radius: 5px;
+    background-color: #9d2bce;
+    text-align: center;
+}
+
+
+.lista-productos li p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.lista-productos li span{
+    color: orange;
+    font-weight: bold;
+}
+
+.lista-productos a{
+    align-items: center;
 }
