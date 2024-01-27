@@ -1,3 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    text-align: center;
+}
+
+html{
+    background-color: #f1f2ff;
+}
+
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
@@ -6,4 +24,6 @@
 .lista-productos{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
 }
