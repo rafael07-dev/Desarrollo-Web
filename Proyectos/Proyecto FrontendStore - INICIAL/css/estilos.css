@@ -84,7 +84,7 @@ h2{
 
 .lista-productos li:hover{
     border: 2px solid #9d2bce;
-    transition: ease 200ms;
+    transition: ease 400ms;
 }
 
 .lista-productos img{
