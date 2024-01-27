@@ -10,6 +10,7 @@ img{
 
 header{
     text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
 html{
@@ -45,9 +46,13 @@ h2{
     margin: 0 auto;
 }
 
+.hero {
+    opacity: .9;
+}
+
 .lista-productos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
@@ -58,6 +63,7 @@ h2{
     border-radius: 5px;
     background-color: #9d2bce;
     text-align: center;
+    padding-bottom: .8rem;
 }
 
 
@@ -72,5 +78,5 @@ h2{
 }
 
 .lista-productos a{
-    align-items: center;
+    margin: auto;
 }
