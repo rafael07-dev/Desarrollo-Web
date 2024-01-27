@@ -70,6 +70,7 @@ h2{
 .lista-productos li p{
     font-size: 2rem;
     color: #fff;
+    margin-bottom: 1rem;
 }
 
 .lista-productos li span{
