@@ -84,7 +84,14 @@ h2{
 
 .lista-productos li:hover{
     border: 2px solid #9d2bce;
-    transition: all ease 400ms;
+    transition: ease 200ms;
+}
+
+.lista-productos img{
+    width: 100%;
+    height: 230px;
+    flex-grow: 1;
+    object-fit: cover;
 }
 
 .lista-productos a{
