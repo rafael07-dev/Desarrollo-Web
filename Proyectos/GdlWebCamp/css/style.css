@@ -5,6 +5,7 @@
 }
 
 html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
 }
 
@@ -87,8 +88,9 @@ img{
 }
 
 .informacion-evento h1{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .iconos{
