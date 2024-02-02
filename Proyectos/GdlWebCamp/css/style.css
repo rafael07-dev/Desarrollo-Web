@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --primari: #f34918;
-}
-
 html{
     font-size: 1.2em;
 }
@@ -20,16 +16,25 @@ img{
     max-width: 100%;
 }
 
-.hero{
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*hero*/
+
+.site-header{
     background-image: url(../img/hero.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     color: #fff;
 }
 
-.hero::before{
+.site-header::before{
     content: '';
     background-color: rgba(0, 0, 0, .7);
     position: absolute;
@@ -46,8 +51,9 @@ img{
     z-index: 1;
 }
 
+
 .redes-sociales{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .redes-sociales a{
@@ -61,23 +67,19 @@ img{
 
 .informacion-evento p{
     margin: 0;
-    font-size: 1rem;
+    font-size: .6rem;
     text-transform: uppercase;
 }
 
 .informacion-evento p i{
     color: #f34918;
-    font-size: 1.3rem;
+    font-size: .8rem;
     margin-right: .5rem;
 }
-/*
-.fecha{
-    float: left;
-}
 
-.ciudad{
-    float: right;
-}*/
+.informacion-evento{
+    margin-top: 5rem;
+}
 
 .informacion-evento p span{
     font-weight: bold;
@@ -85,12 +87,92 @@ img{
 }
 
 .informacion-evento h1{
-    font-size: 5rem;
     text-transform: uppercase;
 }
 
 .iconos{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 4rem;
+    margin-top: 5rem;
+}
+
+@media (min-width: 480px ){
+    .redes-sociales{
+        font-size: 1.4rem;
+    }
+
+    .informacion-evento{
+        margin-top: 8rem;
+    }
+    .informacion-evento h1{
+        font-size: 2.8rem;
+    }
+    
+    .informacion-evento p{
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 768px ){
+
+    .redes-sociales{
+        font-size: 1.8rem;
+    }
+
+    .informacion-evento{
+        margin-top: 10rem;
+    }
+
+    .informacion-evento p i{
+        font-size: 1.2rem;
+        margin-right: .5rem;
+    }
+    .informacion-evento h1{
+        font-size: 4rem;
+    }
+    
+    .informacion-evento p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px ){
+
+    .redes-sociales{
+        font-size: 2rem;
+    }
+
+    .informacion-evento{
+        margin-top: 13rem;
+    }
+
+    .informacion-evento p i{
+        font-size: 1.6rem;
+        margin-right: .5rem;
+    }
+    .informacion-evento h1{
+        font-size: 5rem;
+    }
+    
+    .informacion-evento p{
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1200px ){
+
+    .informacion-evento{
+        margin-top: 13rem;
+    }
+
+    .informacion-evento p i{
+        font-size: 1.6rem;
+        margin-right: .5rem;
+    }
+    .informacion-evento h1{
+        font-size: 6rem;
+    }
+    
+    .informacion-evento p{
+        font-size: 1.6rem;
+    }
 }
