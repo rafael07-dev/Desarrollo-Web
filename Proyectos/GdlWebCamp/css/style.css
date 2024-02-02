@@ -19,7 +19,7 @@ img{
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
 /*hero*/
@@ -67,7 +67,7 @@ img{
 
 .informacion-evento p{
     margin: 0;
-    font-size: .6rem;
+    font-size: .5rem;
     text-transform: uppercase;
 }
 
@@ -87,6 +87,7 @@ img{
 }
 
 .informacion-evento h1{
+    font-size: 1.8rem;
     text-transform: uppercase;
 }
 
@@ -98,14 +99,37 @@ img{
 
 @media (min-width: 480px ){
     .redes-sociales{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .informacion-evento{
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
     .informacion-evento h1{
-        font-size: 2.8rem;
+        font-size: 2.2rem;
+    }
+    
+    .informacion-evento p{
+        font-size: .5rem;
+    }
+}
+
+@media (min-width: 768px ){
+
+    .redes-sociales{
+        font-size: 1.2rem;
+    }
+
+    .informacion-evento{
+        margin-top: 7rem;
+    }
+
+    .informacion-evento p i{
+        font-size: 1.2rem;
+        margin-right: .5rem;
+    }
+    .informacion-evento h1{
+        font-size: 3.2rem;
     }
     
     .informacion-evento p{
@@ -113,14 +137,14 @@ img{
     }
 }
 
-@media (min-width: 768px ){
+@media (min-width: 1024px ){
 
     .redes-sociales{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .informacion-evento{
-        margin-top: 10rem;
+        margin-top: 7.2rem;
     }
 
     .informacion-evento p i{
@@ -132,22 +156,17 @@ img{
     }
     
     .informacion-evento p{
-        font-size: 1.1rem;
+        font-size: .8rem;
     }
 }
-
-@media (min-width: 1024px ){
-
-    .redes-sociales{
-        font-size: 2rem;
-    }
+@media (min-width: 1200px ){
 
     .informacion-evento{
-        margin-top: 13rem;
+        margin-top: 8rem;
     }
 
     .informacion-evento p i{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-right: .5rem;
     }
     .informacion-evento h1{
@@ -155,24 +174,6 @@ img{
     }
     
     .informacion-evento p{
-        font-size: 1.4rem;
-    }
-}
-@media (min-width: 1200px ){
-
-    .informacion-evento{
-        margin-top: 13rem;
-    }
-
-    .informacion-evento p i{
-        font-size: 1.6rem;
-        margin-right: .5rem;
-    }
-    .informacion-evento h1{
-        font-size: 6rem;
-    }
-    
-    .informacion-evento p{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 }
