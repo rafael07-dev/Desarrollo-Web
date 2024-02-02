@@ -4,12 +4,93 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primari: #f34918;
+}
+
+html{
+    font-size: 1.2em;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+img{
+    max-width: 100%;
+}
+
 .hero{
-    background-image: url(../img/encabezado.jpg);
+    background-image: url(../img/hero.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: #fff;
+}
+
+.hero::before{
+    content: '';
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.contenido-hero{
+    padding-top: 1rem;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.redes-sociales{
+    font-size: 1.5rem;
+}
+
+.redes-sociales a{
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.redes-sociales a:hover{
+    color: #f34918;
+}
+
+.informacion-evento p{
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.informacion-evento p i{
+    color: #f34918;
+    font-size: 1.3rem;
+    margin-right: .5rem;
+}
+/*
+.fecha{
+    float: left;
+}
+
+.ciudad{
+    float: right;
+}*/
+
+.informacion-evento p span{
+    font-weight: bold;
+    color: #f34918;
+}
+
+.informacion-evento h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
 }
