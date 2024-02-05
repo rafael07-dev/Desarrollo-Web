@@ -60,6 +60,7 @@ img{
 .redes-sociales a{
     color: #fff;
     margin-left: 1rem;
+    transition: all .3s ease;
 }
 
 .redes-sociales a:hover{
@@ -177,5 +178,80 @@ img{
     
     .informacion-evento p{
         font-size: 1rem;
+    }
+}
+
+/*barra*/
+.barra{
+    background-color: #757271;
+}
+
+.contenedor-barra{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+.barra-navegacion{
+    display: none;
+}
+
+.logo img{
+    width: 15rem;
+}
+.barra-movil{
+    margin-top: .5rem;
+}
+
+.barra-movil span{
+    display: block;
+    background-color: #fff;
+    width: 35px;
+    height: 5px;
+    margin-bottom: .3rem;
+}
+
+.barra-movil:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px ){
+    .logo img{
+
+    }
+    .barra-navegacion{
+        display: block;
+    }
+
+    .barra-navegacion a{
+        display: inline-block;
+        font-size: 12px;
+        height: 40%;
+        margin-top: .9rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 1rem;
+        color: #fff;
+        transition: all .4s ease;
+    }
+
+    .barra-navegacion a:hover{
+        color: #f34918;
+    }
+    .barra-movil{
+        display: none;
+    }
+    .contenedor-barra{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+}
+
+@media (min-width: 1024px){
+    .barra-navegacion a{
+        font-size: 15px;
     }
 }
