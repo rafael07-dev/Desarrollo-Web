@@ -189,19 +189,36 @@ img{
 .contenedor-barra{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
     width: 80%;
+}
+
+.logo img{
+    max-width: 60%;
 }
 
 .barra-navegacion{
     display: none;
 }
 
-.logo img{
-    width: 15rem;
+.barra-navegacion ul li{
+    list-style: none;
 }
-.barra-movil{
-    margin-top: .5rem;
+
+.barra-navegacion ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: .5rem;
+    transition: all .3s ease;
+} 
+
+.barra-navegacion ul li a:hover{
+    background-color: #f34918;
 }
 
 .barra-movil span{
@@ -209,49 +226,53 @@ img{
     background-color: #fff;
     width: 35px;
     height: 5px;
-    margin-bottom: .3rem;
+    margin-bottom: .2rem;
 }
 
 .barra-movil:hover{
     cursor: pointer;
 }
 
+@media (min-width: 480px ){
+    .logo img{
+        max-width: 60%;
+    }
+}
+
 @media (min-width: 768px ){
     .logo img{
-
-    }
-    .barra-navegacion{
-        display: block;
-    }
-
-    .barra-navegacion a{
-        display: inline-block;
-        font-size: 12px;
-        height: 40%;
-        margin-top: .9rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: right;
-        margin-right: 1rem;
-        color: #fff;
-        transition: all .4s ease;
-    }
-
-    .barra-navegacion a:hover{
-        color: #f34918;
-    }
-    .barra-movil{
-        display: none;
+        max-width: 60%;
     }
     .contenedor-barra{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 95%;
+    }
+
+    .barra-navegacion{
+        display: block;
+    }
+
+    .barra-navegacion ul li a{
+        font-size: 15px;
+    }
+
+    .barra-navegacion ul{
+        display: flex;
+    }
+
+    .barra-movil{
+        display: none;
     }
 }
 
 @media (min-width: 1024px){
-    .barra-navegacion a{
-        font-size: 15px;
+
+    .logo img{
+        max-width: 50%;
+    }
+    .barra-navegacion ul li a{
+        font-size: 17px;
     }
 }
