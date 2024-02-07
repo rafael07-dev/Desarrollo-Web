@@ -221,6 +221,15 @@ img{
     background-color: #f34918;
 }
 
+.barra-navegacion.active{
+    height: 450px;
+}
+
+.barra-navegacion ul li a.active{
+    color: #fff;
+    border: 1px solid #f34918;
+}
+
 .barra-movil span{
     display: block;
     background-color: #fff;
