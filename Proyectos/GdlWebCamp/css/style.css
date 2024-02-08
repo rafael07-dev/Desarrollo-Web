@@ -290,7 +290,7 @@ nav a:hover{
     }
 }
 
-.barra-navegacion .side-bar{
+.side-bar{
     position: absolute;
     display: none;
     flex-direction: column;
