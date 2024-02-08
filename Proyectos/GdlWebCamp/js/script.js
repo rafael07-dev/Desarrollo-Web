@@ -1,9 +1,14 @@
-const barraMovil = document.querySelector(".barra-movil");
-const barraNavegacion = document.querySelector(".barra-navegacion");
+const menuBar = document.querySelector('.menu-bar');
+const menuHide = document.querySelector('.menu-hide');
 
-barraMovil.addEventListener('click', () => {
-    
+function showMenu() {
+    const sideBar = document.querySelector('.side-bar');
 
-    barraNavegacion.classList.toggle("active");
+    sideBar.style.display = 'flex';
+}
 
-});
+function hideMenu() {
+    const sideBar = document.querySelector('.side-bar');
+
+    sideBar.style.display = 'none';
+}

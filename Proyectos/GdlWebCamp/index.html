@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDLWEBCAMP</title>
+    <title>CTGWEBCAMP</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,11 +14,13 @@
         <div class="hero">
             <div class="contenido-hero contenedor">
                 <nav class="redes-sociales">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
                 </nav>
 
                 <div class="informacion-evento">
@@ -40,24 +42,34 @@
             <div class="logo">
                 <img src="img/logo.svg" alt="logo ctgwebcamp">
             </div>
-
-            <div class="barra-movil">
-                <span></span><span></span><span></span>
-            </div>
-
             <nav class="barra-navegacion">
-                <ul>
-                    <li><a href="#" class="active">conferencia</a></li>
+                <ul class="side-bar">
+                    <li class="menu-hide" onclick="hideMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="#">conferencia</a></li>
                     <li><a href="#">calendario</a></li>
                     <li><a href="#">invitados</a></li>
                     <li><a href="#">reservaciones</a></li>
+                </ul>
+
+                <ul>
+                    <li class="hidebar"><a href="#">conferencia</a></li>
+                    <li class="hidebar"><a href="#">calendario</a></li>
+                    <li class="hidebar"><a href="#">invitados</a></li>
+                    <li class="hidebar"><a href="#" class="active">reservaciones</a></li>
+                    <li class="menu-bar" onclick="showMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
     <img src="img/hero.webp" alt="">
-
     <script src="js/script.js"></script>
 </body>
 
