@@ -204,7 +204,7 @@ img{
     display: flex;
     position: relative;
     justify-content: space-between;
-    background-color: #757271;
+    background-color: #575453;
     width: 100%;
 }
 
@@ -215,13 +215,14 @@ img{
 
 .barra-navegacion li{
     list-style: none;
-    height: 40px;
+    height: 70px;
 }
 
 .barra-navegacion a{
     display: flex;
     height: 100%;
     align-items: center;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0px 20px;
