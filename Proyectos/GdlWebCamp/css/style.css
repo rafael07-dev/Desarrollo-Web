@@ -46,7 +46,14 @@ img{
 .contenido-hero{
     padding-top: 1rem;
     position: relative;
+    margin: 0 auto;
+    width: 90%;
     z-index: 1;
+}
+
+.contenedor-redes{
+    margin: 0 auto;
+    width: 250px;
 }
 
 .redes-sociales ul{
@@ -118,8 +125,8 @@ img{
 
 @media (min-width: 768px ){
 
-    .redes-sociales{
-        font-size: 1.2rem;
+    .redes-sociales a{
+        font-size: 1.3rem;
     }
 
     .informacion-evento{
@@ -141,8 +148,8 @@ img{
 
 @media (min-width: 1024px ){
 
-    .redes-sociales{
-        font-size: 1.4rem;
+    .redes-sociales a{
+        font-size: 1.3rem;
     }
 
     .informacion-evento{
@@ -163,6 +170,10 @@ img{
 }
 @media (min-width: 1200px ){
 
+    .redes-sociales a{
+        font-size: 1.5rem;
+    }
+
     .informacion-evento{
         margin-top: 8rem;
     }
@@ -172,11 +183,11 @@ img{
         margin-right: .5rem;
     }
     .informacion-evento h1{
-        font-size: 5rem;
+        font-size: 4.2rem;
     }
     
     .informacion-evento p{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }
 
@@ -223,10 +234,6 @@ img{
     fill: #fff;
 }
 
-.barra-navegacion svg:hover{
-    fill: #f34918;
-}
-
 .hidebar{
     display: none;
 }
@@ -236,6 +243,7 @@ img{
 }
 nav a:hover{
     background-color: #f34918;
+    color: #fff;
 }
 /*
 
@@ -288,7 +296,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: 12px;
+    font-size: 10px;
     backdrop-filter: blur(5px);
     height: 200px;
     width: 100%;
