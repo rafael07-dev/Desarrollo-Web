@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color: #f2f2f2;
+    background-color: #e7e5e5;
 }
 
 img{
@@ -19,7 +19,21 @@ img{
 
 .contenedor{
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
+}
+
+.btn{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f34918;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 5px;
 }
 
 /*hero*/
@@ -204,7 +218,7 @@ img{
     display: flex;
     position: relative;
     justify-content: space-between;
-    background-color: #575453;
+    background-color: rgb(29, 29, 29);
     width: 100%;
 }
 
@@ -291,9 +305,9 @@ nav a:hover{
     }
 }
 
-.side-bar{
-    position: absolute;
+.barra-navegacion .side-bar{
     display: none;
+    position: absolute;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -301,9 +315,112 @@ nav a:hover{
     backdrop-filter: blur(5px);
     height: 200px;
     width: 100%;
-    top: 44px;
+    top: 70px;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 1;
+}
+
+/*Contenido principal*/
+.contenido-principal{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.contenido-principal h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+}
+
+.contenido-img{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-img img{
+    width: 50px;
+    height: 15px;
+}
+
+.contenido-principal p{
+    font-size: 11px;
+}
+
+.contenido-talleres{
+    position: relative;
+    height: 350px;
+    background-color: #f34918;
+}
+
+.bg-contenido-principal{
+    height: 100%;
+    width: 100%;
+}
+
+.calendario{
+    background-color: #f3f0ef;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    position: absolute;
+    height: 300px;
+    width: 350px;
+    top: 0;
+    backdrop-filter: blur(100px);
+}
+
+.calendario h1{
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*
+.calendario img{
+    width: 50px;
+    height: 15px;
+}*/
+
+.calendario-btn{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+
+}
+
+.opciones-calendario{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.opciones-calendario p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.opciones-calendario p i{
+    color: #f34918;
+    margin-right: 5px;
+}
+
+.evento{
+    font-size: 12px;
+    line-height: 2;
+}
+
+.evento h2{
+    color: #f34918;
+}
+
+.evento p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.evento p i{
+    color: #f34918;
+    margin-right: 5px;
 }
