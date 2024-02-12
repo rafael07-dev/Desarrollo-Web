@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color: #e7e5e5;
+    background-color: #dcdcdc;
 }
 
 img{
@@ -32,7 +32,6 @@ img{
     height: 30px;
     font-size: 12px;
     font-weight: bold;
-    align-items: center;
     border-radius: 5px;
 }
 
@@ -350,25 +349,20 @@ nav a:hover{
 
 .contenido-talleres{
     position: relative;
-    height: 350px;
-    background-color: #f34918;
 }
 
-.bg-contenido-principal{
-    height: 100%;
-    width: 100%;
+.bg-contenido-principal img{
+    display: none;
 }
 
 .calendario{
-    background-color: #f3f0ef;
     display: flex;
     flex-direction: column;
+    background-color: #efefef;
     padding: 20px 10px;
-    position: absolute;
-    height: 300px;
-    width: 350px;
-    top: 0;
-    backdrop-filter: blur(100px);
+    height: auto;
+    width: 375px;
+    border-radius: 10px;
 }
 
 .calendario h1{
@@ -386,7 +380,6 @@ nav a:hover{
     display: flex;
     justify-content: flex-end;
     height: 30px;
-
 }
 
 .opciones-calendario{
@@ -423,4 +416,18 @@ nav a:hover{
 .evento p i{
     color: #f34918;
     margin-right: 5px;
+}
+
+@media (min-width: 768px ){
+    .bg-contenido-principal img{
+        display: block;
+    }
+
+    .calendario{
+        position: absolute;
+        
+        top: 30px;
+        left: 30px;
+        backdrop-filter: blur(5px);
+    }
 }
