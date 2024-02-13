@@ -358,7 +358,7 @@ nav a:hover{
 .calendario{
     display: flex;
     flex-direction: column;
-    background-color: #efefef;
+    background-color: rgba(255, 255, 255, .7);
     padding: 20px 10px;
     height: auto;
     width: 375px;
@@ -425,9 +425,56 @@ nav a:hover{
 
     .calendario{
         position: absolute;
-        
-        top: 30px;
+        top: 10px;
         left: 30px;
         backdrop-filter: blur(5px);
     }
+}
+
+/*invitados*/
+
+.invitados{
+    padding: 30px 0;
+}
+
+.invitados h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-invitados ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.invitado{
+    height: auto;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.invitado img{
+    height: 100%;
+    width: 100%;
+}
+
+.invitado:hover{
+    
+}
+
+.contenido-invitado{
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    color: #f34918;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
 }
