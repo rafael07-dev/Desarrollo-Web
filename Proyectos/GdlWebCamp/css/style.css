@@ -456,7 +456,7 @@ nav a:hover{
 
 .invitado{
     height: auto;
-    width: 300px;
+    width: 280px;
     background-color: white;
     position: relative;
     transition: all .4s ease-in-out;
@@ -477,7 +477,7 @@ nav a:hover{
     filter: none;
 }
 
-.contenido-invitado{
+.texto-invitado{
     position: absolute;
     padding: 10px;
     bottom: 0;
