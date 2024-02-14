@@ -442,29 +442,39 @@ nav a:hover{
     text-transform: uppercase;
 }
 
+.contenedor-invitados{
+    padding: 40px 0;
+}
+
 .contenedor-invitados ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     list-style: none;
 }
 
 .invitado{
     height: auto;
-    width: 250px;
-    border-radius: 10px;
+    width: 300px;
     background-color: white;
     position: relative;
+    transition: all .4s ease-in-out;
+    transition: transform .2s;
+}
+
+.invitado:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .invitado img{
     height: 100%;
-    width: 100%;
+    filter: grayscale();
 }
 
-.invitado:hover{
-    
+.invitado img:hover{
+    filter: none;
 }
 
 .contenido-invitado{
@@ -472,7 +482,7 @@ nav a:hover{
     padding: 10px;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .5);
     color: #f34918;
     text-transform: uppercase;
     font-weight: bold;
