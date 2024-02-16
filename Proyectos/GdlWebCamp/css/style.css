@@ -471,6 +471,7 @@ nav a:hover{
 .invitado img{
     height: 100%;
     filter: grayscale();
+    transition: all .6s ease-in-out;
 }
 
 .invitado img:hover{
