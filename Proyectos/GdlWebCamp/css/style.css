@@ -514,12 +514,13 @@ nav a:hover{
     bottom: 0;
     left: 0;
     z-index: -1;
+    background-attachment: fixed;
 }
 
 .resumen-evento::before{
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .6);
     top: 0;
     right: 0;
     bottom: 0;
@@ -561,21 +562,28 @@ nav a:hover{
 .contenedor-precios{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     text-align: center;
     padding: 20px 0;
 }
 
 .card-precios{
-    height: 250px;
+    height: 300px;
     width: 100%;
     background-color: #fff;
     padding: 10px 0;
-    margin: 0;
+    margin: 0 auto;
     border: .5px solid #f34918;
     display: grid;
     align-items: center;
     border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.card-precios:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .7);
 }
 
 .card-precios h3{
@@ -598,4 +606,15 @@ nav a:hover{
 .card-precios span{
     font-size: 30px;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .contenedor-precios{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .card-precios{
+        width: 250px;
+    }
 }
