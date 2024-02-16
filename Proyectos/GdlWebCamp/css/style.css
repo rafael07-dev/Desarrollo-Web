@@ -28,13 +28,14 @@ img{
     text-transform: uppercase;
     color: white;
     background-color: #f34918;
-    width: 100px;
-    height: 30px;
     font-size: 12px;
     font-weight: bold;
     border-radius: 5px;
+    padding: 10px 30px;
 }
-
+.boton{
+    margin: 0 auto;
+}
 /*hero*/
 
 .site-header{
@@ -496,7 +497,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 250px;
     position: relative;
     align-items: center;
 }
@@ -518,7 +519,7 @@ nav a:hover{
 .resumen-evento::before{
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     top: 0;
     right: 0;
     bottom: 0;
@@ -545,4 +546,56 @@ nav a:hover{
     color: #f34918;
     font-size: 30px;
     font-weight: 500;
+}
+
+/*precio*/
+.precios{
+    padding: 30px 0;
+}
+
+.precios h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-precios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card-precios{
+    height: 250px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    border: .5px solid #f34918;
+    display: grid;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.card-precios h3{
+    color: #f34918;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.card-precios p{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.card-precios p i{
+    color: green;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.card-precios span{
+    font-size: 30px;
+    font-weight: bold;
 }
