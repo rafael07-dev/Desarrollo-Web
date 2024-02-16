@@ -608,6 +608,15 @@ nav a:hover{
     font-weight: bold;
 }
 
+.boton a{
+    transition: all .3s ease-in-out;
+}
+
+.boton a:hover{
+    background-color: green;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .5);
+}
+
 @media (min-width: 768px) {
     .contenedor-precios{
         display: flex;
