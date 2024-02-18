@@ -614,7 +614,7 @@ nav a:hover{
 
 .boton a:hover{
     background-color: green;
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .5);
 }
 
 @media (min-width: 768px) {
@@ -626,4 +626,33 @@ nav a:hover{
     .card-precios{
         width: 250px;
     }
+}
+
+/*testimoniales*/
+.testimoniales h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-testimonial{
+    height: auto;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: .5px solid #858281;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.content-testimonial{
+    display: flex;
+}
+
+.content-testimonial img{
+    max-width: 20%;
+    border-radius: 50%;
+}
+
+.card-testimonial p{
+    font-size: 14px;
 }

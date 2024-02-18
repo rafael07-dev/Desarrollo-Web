@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.logo p{
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.siteHeader{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .7);
+}
+
+.nav-links{
+  display: none;
+  min-width: 300px;
+}
+
+.nav-links ul{
+  list-style: none;
+}
+
+.nav-links ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu{
+  display: block;
+}
+
+.hideMenu{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .7);
+  animation: all .3s ease;
+}
+
+.hideMenu ul{
+  list-style: none;
+  text-align: center;
+}
+
+.hideMenu ul li a{
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.hideMenu ul li a:hover{
+  background-color: #efefef;
+}
+
+@media (min-width: 480px) {
+  .nav-links{
+    display: block;
+  }
+
+  .nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu{
+    display: none;
+  }
+}
