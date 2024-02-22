@@ -609,7 +609,6 @@ nav a:hover {
 
 .contenedor-precios {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
     text-align: center;
     padding: 20px 0;
@@ -617,9 +616,9 @@ nav a:hover {
 
 .card-precios {
     height: 300px;
-    width: 100%;
+    max-width: 400px;
     background-color: #fff;
-    padding: 10px 0;
+    padding: 10px 30px;
     margin: 0 auto;
     border: .5px solid #f34918;
     display: grid;
@@ -689,26 +688,52 @@ nav a:hover {
     background-image: url(../img/separador.png);
 }
 
+.contenedor-testimoniales{
+    display: grid;
+    gap: 10px;
+}
+
 .card-testimonial {
     height: auto;
     width: 300px;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin: 0 auto;
     border: .5px solid #858281;
     border-radius: 10px;
     transition: all .2s ease-in-out;
 }
-
-.content-testimonial {
-    display: flex;
+.content-avatar{
+    max-width: 20%;
 }
 
-.content-testimonial img {
-    max-width: 20%;
+.content-avatar img {
+    max-width: 100%;
     border-radius: 50%;
 }
 
 .card-testimonial p {
+    font-size: 14px;
+}
+
+.wrapper-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.content-testimonial{
+    display: grid;
+}
+
+.content-testimonial p{
+    text-transform: capitalize;
+    color: #f34918;
+    font-size: 14px;
+}
+
+.content-testimonial span{
+    text-transform: capitalize;
     font-size: 14px;
 }
