@@ -12,4 +12,5 @@ btnClose.addEventListener('click', ()=>{
     if(dropdownMenu.classList.contains('open')){
         dropdownMenu.classList.remove('open');
     }
+    return;
 });
