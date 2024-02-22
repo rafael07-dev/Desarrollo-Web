@@ -677,6 +677,9 @@ nav a:hover {
 }
 
 /*testimoniales*/
+.testimoniales{
+    padding-bottom: 30px;
+}
 .testimoniales h2 {
     text-transform: uppercase;
     text-align: center;
@@ -736,4 +739,43 @@ nav a:hover {
 .content-testimonial span{
     text-transform: capitalize;
     font-size: 14px;
+}
+
+/*registro*/
+
+.registro{
+    height: 300px;
+    background-image: url(/img/bg-inscribir.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper-registro{
+    display: grid;
+    place-content: center;
+    height: 300px;
+}
+.wrapper-registro p{
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper-registro h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #fff;
+}
+
+.wrapper-registro a{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
