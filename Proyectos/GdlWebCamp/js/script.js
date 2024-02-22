@@ -1,14 +1,15 @@
-const menuBar = document.querySelector('.menu-bar');
-const menuHide = document.querySelector('.menu-hide');
+const menuBar = document.querySelector('.menu-bar a');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const btnClose = document.querySelector('.btn-close');
 
-function showMenu() {
-    const sideBar = document.querySelector('.side-bar');
+var body = document.body;
 
-    sideBar.style.display = 'flex';
-}
+menuBar.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('open');
+});
 
-function hideMenu() {
-    const sideBar = document.querySelector('.side-bar');
-
-    sideBar.style.display = 'none';
-}
+btnClose.addEventListener('click', ()=>{
+    if(dropdownMenu.classList.contains('open')){
+        dropdownMenu.classList.remove('open');
+    }
+});
