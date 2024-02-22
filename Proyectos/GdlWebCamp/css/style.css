@@ -779,3 +779,10 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
+.wrapper-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #858281;
+    color: #fff;
+}
