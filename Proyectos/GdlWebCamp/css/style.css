@@ -633,6 +633,12 @@ nav a:hover{
     text-transform: uppercase;
     text-align: center;
 }
+
+.testimoniales h2::after{
+    content: '';
+    top: 0;
+    background-image: url(../img/separador.png);
+}
 .card-testimonial{
     height: auto;
     width: 300px;

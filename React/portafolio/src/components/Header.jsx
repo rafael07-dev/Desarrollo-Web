@@ -1,9 +1,11 @@
+import {Aside} from './Aside';
+
 export function Header() {
 
     const showMenu = () => {
-        const element = document.querySelector('.hideMenu');
-        
-        element.style.display = 'none';
+        return(
+            <Aside/>
+        );
     }
 
     return (

@@ -1,12 +1,5 @@
 export function aside() {
 
-   
-    const showMenu = () => {
-        const element = document.querySelector('.hideMenu');
-        
-        element.style.display = 'block';
-    }
-
     return(
             <aside className="hideMenu">
                 <ul>
