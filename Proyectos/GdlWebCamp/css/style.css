@@ -802,7 +802,7 @@ footer{
 .acerca-de h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .acerca-de span{
@@ -811,11 +811,12 @@ footer{
 
 .acerca-de p{
     text-align: center;
+    font-size: 18px;
 }
 
 .tweets h1{
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -825,12 +826,13 @@ footer{
 
 .tweets p{
     text-align: center;
+    font-size: 18px;
 }
 
 .redes-sociales h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .redes-sociales span{
