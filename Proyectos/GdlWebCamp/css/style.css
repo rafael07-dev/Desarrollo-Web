@@ -794,6 +794,7 @@ footer{
 .wrapper-footer{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     color: #fff;
     padding: 35px 0;
 }
@@ -838,5 +839,10 @@ footer{
 
 .redes-sociales ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociales ul li a:hover{
+    color: #f34918;
 }
