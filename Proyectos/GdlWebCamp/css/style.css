@@ -778,11 +778,65 @@ nav a:hover {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    transition: all .3s ease-in-out;
+}
+
+.wrapper-registro a:hover{
+    background-color: #f34918;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgb(29, 29, 29);
 }
 
 .wrapper-footer{
     display: flex;
     flex-direction: column;
-    background-color: #858281;
     color: #fff;
+    padding: 35px 0;
+}
+
+.acerca-de h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.acerca-de span{
+    color: #f34918;
+}
+
+.acerca-de p{
+    text-align: center;
+}
+
+.tweets h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+.tweets span{
+    color: #f34918;
+}
+
+.tweets p{
+    text-align: center;
+}
+
+.redes-sociales h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.redes-sociales span{
+    color: #f34918;
+}
+
+.redes-sociales ul{
+    display: flex;
+    justify-content: space-evenly;
 }
