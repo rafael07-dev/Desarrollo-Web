@@ -584,8 +584,9 @@ nav a:hover {
 .resumen-evento ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     text-align: center;
     height: 100%;
 }
@@ -593,7 +594,7 @@ nav a:hover {
 .resumen-evento li {
     color: #fff;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
@@ -607,6 +608,11 @@ nav a:hover {
 
 
 @media (min-width: 768px) {
+
+    .resumen-evento ul {
+        flex-direction: row;
+
+    }
     .resumen-evento li {
         font-size: 20px;
         font-weight: bold;
@@ -775,13 +781,13 @@ nav a:hover {
 }
 .wrapper-registro p{
     text-align: center;
-    font-size: 26px;
+    font-size: 16px;
     color: #fff;
 }
 
 .wrapper-registro h1{
     text-transform: uppercase;
-    font-size: 56px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -806,6 +812,16 @@ nav a:hover {
 
 .wrapper-registro a:hover{
     background-color: #f34918;
+}
+
+@media (min-width: 768px) {
+    .wrapper-registro p{
+        font-size: 23px;;
+    }
+
+    .wrapper-registro h1{
+        font-size: 60px;
+    }
 }
 
 /*footer*/
@@ -896,15 +912,16 @@ footer{
 }
 
 .wrapper-dias{
-    height: 250px;
+    height: 300px;
     
 }
 
 .wrapper-dias ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     text-align: center;
     height: 100%;
@@ -913,13 +930,33 @@ footer{
 .wrapper-dias li {
     color: black;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 14px;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
 .wrapper-dias ul li p{
-    font-size: 50px;
+    font-size: 38px;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+
+@media (min-width: 768px) {
+    .wrapper-dias ul {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .wrapper-dias ul li p{
+        font-size: 60px;
+    }
+
+    .wrapper-dias li {
+        color: black;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+    }
 }
