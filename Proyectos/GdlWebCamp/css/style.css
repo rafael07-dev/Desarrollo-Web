@@ -86,10 +86,6 @@ img {
     transition: all .3s ease;
 }
 
-.redes-sociales a:hover {
-    color: #f34918;
-}
-
 .iconos {
     display: flex;
     justify-content: space-evenly;
