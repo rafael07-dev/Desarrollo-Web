@@ -581,6 +581,10 @@ nav a:hover {
     z-index: -1;
 }
 
+.resumen-evento {
+    overflow-x: hidden;
+}
+
 .resumen-evento ul {
     list-style: none;
     display: flex;
@@ -604,6 +608,12 @@ nav a:hover {
     font-size: 30px;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.7);
+    transition: transform .4s ease;
+    transform: translateX(1600%);
+}
+
+.numero.show {
+    transform: translateX(0%);
 }
 
 
@@ -637,6 +647,7 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
     padding: 20px 20px;
+    overflow-x: hidden;
 }
 
 .card-precios {
@@ -646,7 +657,12 @@ nav a:hover {
     background-color: #fff;
     padding: 10px 30px;
     border: .5px solid #f34918;
-    transition: all .2s ease-in-out;
+    transform: translateX(500%);
+    transition: transform .3s ease;
+}
+
+.card-precios.show {
+    transform: translateX(0%);
 }
 
 .card-precios:hover {
@@ -913,7 +929,7 @@ footer{
 
 .wrapper-dias{
     height: 300px;
-    
+    overflow-x: hidden;
 }
 
 .wrapper-dias ul {
