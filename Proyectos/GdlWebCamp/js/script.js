@@ -2,10 +2,17 @@ const menuBar = document.querySelector('.menu-bar a');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const btnClose = document.querySelector('.btn-close');
 const cards = document.querySelectorAll('.card-precios');
+const cardTestimonial = document.querySelectorAll('.card-testimonial');
 const numero = document.querySelectorAll('.numero');
+const calendar = document.querySelectorAll('.calendario');
 const windowHeight = window.innerHeight / 5 * 4;
 
-var body = document.body;
+console.log("Calendar:", calendar);
+console.log("Cards:", cards);
+console.log("Testimonial:", cardTestimonial);
+console.log("Numero:", numero);
+
+window.addEventListener('scroll', animationScroll);
 
 menuBar.addEventListener('click', () => {
     dropdownMenu.classList.toggle('open');
@@ -15,35 +22,26 @@ btnClose.addEventListener('click', () => {
     if (dropdownMenu.classList.contains('open')) {
         dropdownMenu.classList.remove('open');
     }
-    return;
 });
 
-window.addEventListener('scroll', animationScroll);
+function showIfVisible(elements) {
+    elements.forEach((element) => {
+        const distanceFromTo = element.getBoundingClientRect().top;
+
+        if (distanceFromTo < windowHeight + 50) {
+
+            if(!element.classList.contains('show')){
+                element.classList.toggle('show');
+            }
+        }else{
+            element.classList.remove('show')
+        }
+    });
+}
 
 function animationScroll() {
-
-    cards.forEach((card) => {
-        const heightCard = card.getBoundingClientRect().top;
-
-        if (heightCard < windowHeight) {
-
-            if(!card.classList.contains('show')){
-                card.classList.toggle('show');
-            }
-        }else{
-            card.classList.remove('show')
-        }
-    });
-
-    numero.forEach((numero) => {
-        const heightCard = numero.getBoundingClientRect().top;
-
-        if (heightCard < windowHeight + 50) {
-            if(!numero.classList.contains('show')){
-                numero.classList.toggle('show');
-            }
-        }else{
-            numero.classList.remove('show');
-        }
-    });
+    showIfVisible(cards);
+    showIfVisible(numero);
+    showIfVisible(cardTestimonial);
+    showIfVisible(calendar);
 } 

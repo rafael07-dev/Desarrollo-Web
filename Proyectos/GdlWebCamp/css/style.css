@@ -407,6 +407,12 @@ nav a:hover {
     height: auto;
     max-width: 300px;
     border-radius: 10px;
+    transform: scale(0);
+    transition: .2s ease;
+}
+
+.calendario.show {
+    transform: scale(1);
 }
 
 .calendario h1 {
@@ -607,7 +613,7 @@ nav a:hover {
     color: #f34918;
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.7);
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 1);
     transition: transform .4s ease;
     transform: translateX(1600%);
 }
@@ -657,7 +663,7 @@ nav a:hover {
     background-color: #fff;
     padding: 10px 30px;
     border: .5px solid #f34918;
-    transform: translateX(500%);
+    transform: translateX(-500%);
     transition: transform .4s ease;
 }
 
@@ -727,16 +733,24 @@ nav a:hover {
 
 .contenedor-testimoniales{
     display: grid;
+    justify-content: center;
     gap: 10px;
+    height: auto;
 }
 
 .card-testimonial {
-    height: auto;
+    display: block;
+    height: 220px;
     max-width: 280px;
     background-color: #fff;
     padding: 20px 20px;
     border: .5px solid #858281;
-    transition: all .2s ease-in-out;
+    transform: scale(0);
+    transition: transform .4s ease;
+}
+
+.card-testimonial.show {
+    transform: scale(1);
 }
 .content-avatar{
     max-width: 20%;
